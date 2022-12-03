@@ -23,7 +23,7 @@ def register(request):
     return render(request,'register.html', {'form': form, 'msg': msg})
 
 
-def login(request):
+def login_view(request):
     form = LoginForm(request.POST or None)
     msg = None
     if request.method == 'POST':
