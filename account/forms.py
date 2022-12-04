@@ -58,6 +58,27 @@ from .models import Startup, Investor
 
 
 class StartupForm(forms.ModelForm):
+    name = forms.CharField(
+        widget= forms.TextInput(
+            attrs={
+                "class": "form-control"
+            }
+        )
+    )
+    url = forms.CharField(
+        widget=forms.PasswordInput(
+            attrs={
+                "class": "form-control"
+            }
+        )
+    )
+    address = forms.CharField(
+        widget=forms.PasswordInput(
+            attrs={
+                "class": "form-control"
+            }
+        )
+    )
 
     class Meta:
         model = Startup

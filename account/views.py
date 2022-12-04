@@ -62,15 +62,15 @@ def employee(request):
     return render(request,'employee.html')
 
 def startup(request):
-    form = StartupForm(request.POST or None)
+    S_form = StartupForm(request.POST or None)
     msg = None
     if request.method == 'POST':
-        if form.is_valid():
-            user = form.save()
+        if S_form.is_valid():
+            user = S_form.save()
             msg = 'user created'
             return redirect('home')
         else:
             msg = 'form is not valid'
     else:
-        form = SignUpForm()
+        S_form = StartupForm()
     return render(request, 'startup.html')
