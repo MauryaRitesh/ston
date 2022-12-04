@@ -36,10 +36,10 @@ def login_view(request):
                 return redirect('adminpage')
             elif user is not None and user.is_customer:
                 login(request, user)
-                return redirect('customer')
+                return redirect('home')
             elif user is not None and user.is_employee:
                 login(request, user)
-                return redirect('employee')
+                return redirect('home')
             else:
                 msg= 'invalid credentials'
         else:
@@ -50,6 +50,9 @@ def login_view(request):
 def admin(request):
     return render(request,'admin.html')
 
+
+def home(request):
+    return render(request,'home.html')
 
 def customer(request):
     return render(request,'customer.html')

@@ -1,0 +1,341 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>STON</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'dist/css/style.css' %}">
+    <link rel="stylesheet" href="/distcss/ston.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="{% static 'css/last.css' %}">
+
+    <!-- Styles for this sample page only -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<link href="https://fonts.googleapis.com/css2?family=Anaheim&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+   
+    body{font-family:'Anaheim',sans-serif;margin:0;padding:0;color:#222;position:relative;width:100%;overflow-x:hidden}
+    .content{
+        margin-left: 40px;
+       
+
+    }
+    .tred{
+        background-color: aquamarine;
+        color: blue;
+        text-shadow: #222;
+       
+        width: 150px;
+        border-radius: 25%;
+        text-align: right;
+        height: 100%;
+    }
+    .treds{
+        
+        
+        font-size: 50px;
+    }
+    .tred1{
+        width: 400px;
+        font-size: 100%;
+    }
+    .button{
+        width: 100px;
+        height: 40px;
+        color: darkslategray;
+        background-color: olive;
+        text-decoration: double;
+        border-radius: 10px;
+
+    }
+    .img{
+        float: right;
+            
+            padding: 5px;
+            margin-right: 50px;
+            border-color: blue;
+            border-width: 3px;
+            border: 10px solid transparent;
+           padding: 15px;
+            height: 250px;
+            width: 400px;
+            border-image: url(app/images/startup.jpg) 30 stretch;
+
+    }
+    button:hover{
+        color: blueviolet;
+        background-color: white;
+    }
+    .large{
+        font-size: large;
+    }
+    .miller{
+        text-align: justify;
+        text-indent: 60px;
+    }
+    .star{
+        background-color: bisque;
+        height: 30%;
+        width: 100%;
+        text-align: justify;
+        text-indent: 60px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+        float:left;
+    }
+    img{
+        float: right;
+            
+            padding: 5px;
+            margin-right: 50px;
+            border-color: blue;
+            border-width: 3px;
+            border: 10px solid transparent;
+           padding: 15px;
+            height: 250px;
+            width: 300px;
+            border-image: url(app/images/startup.jpg) 30 stretch;
+    }
+    .text{
+        font-size: 50px;
+    }
+    html
+{
+	padding: 0 1em;
+	font-family: Calibri, sans-serif;
+}
+
+
+
+img
+{
+	max-width: 100%;
+}
+
+.image-left, .image-right
+{
+	margin: 1em 0;
+}
+
+@media (min-width: 20em)
+{
+	.image-left, .image-right
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	.image-left img
+	{
+		margin-right: 1em;
+		float: left; /* fallback */
+	}
+
+	.image-right img
+	{
+		order: 1;
+		margin-left: 1em;
+		float: right; /* fallback */
+	}
+	
+	/* clearfix for fallback */
+	.image-left::after,
+	.image-right::after
+	{
+		content: "";
+  	display: block;
+		clear: both;
+	}
+}
+
+@media (min-width: 30em)
+{
+	.image-left img, .image-right img
+	{
+		flex-shrink: 0;
+	}
+}
+
+
+   
+
+ 
+
+
+  </style>
+   
+ </head>
+<body>
+
+    
+    <!-- /header -->
+   
+
+    <nav>
+        <!-- Start SnazzyMenu -->
+        
+        <div class="snazzymenu">
+            <main>
+                <div class="ston">STON</div>
+            </main>
+            <ul id="menu-main-nav" class="menu">
+                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                    <a href="">Invest</a>
+                    <ul class="sub-menu">
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Live Details</a><br>
+                        <small class="color">Invest in vetted companies</small></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Auto Invest</a><br>
+                        <small>Diersify your startup portfolio</small></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Angel investing</a><br>
+                        <small>Learn about angle invest</small></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">How it Works</a><br>
+                        <small>Learn now SeedInvest Works</small></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Events</a><br>
+                        <small>Help center and FAQS</small></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Help Center</a></li>
+                    </ul>
+                </li>
+                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Resource</a>
+                    <ul class="sub-menu">
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Blog</a>
+
+                        </li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Case Studies</a></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Portfolio</a></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Press</a>
+                        </li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Glossary</a>
+                        </li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">How it Works</a>
+                        </li>
+                       
+                        
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <!-- End SnazzyMenu -->
+    </nav>
+    <div class="content">
+       
+        
+        <section><br>
+            
+            <p><br><br><br><br></p>
+        </section>
+        <section>
+            <img class="img" src="{% static 'images/startup.jpg' %}" alt="Snow" >
+            <h1 class="tred">TRENDING</h1>
+           <h1 class="treds"><b> Toybox is raising on <br>
+             SeedInvest </b></h1>
+             <h3 class="tred1"> Invest by Saturday (12/3) at 11.59pm  EST to receive exclusive <br> early investor perks.</h3><br>
+             <button type="button" class="button">INVEST</button> 
+             
+        </section>
+        <br><br>
+        <small>See<a href="http://127.0.0.1:5500/responsive-sticky-mega-nav-snazzy/dissc.html"> important disclosures.</a></small><br><br>
+        
+
+            <div class="miller">
+            <i class="fa fa-dollar" class="large" style="font-size:24px"><b>1M</b></i><small>Amount rised</small>
+            <i class="fa fa-dollar" class="large" style="font-size:24px"><b>10K</b></i><small>Amount rised</small>
+            <i class="fa fa-dollar" class="large" style="font-size:24px"><b>500M</b></i><small>Amount rised</small>
+        </div>
+    </div>
+    
+    <div class="star">
+        
+        <h1><b> How SeedInvest works </b></h1>
+        <img src="{% static 'images/tech1.jpg' %}" alt="">
+        <i class='fas fa-landmark' style='font-size:36px'></i><br>
+        
+        <h2><b><i>Access the startup asset class </i></b></h2>
+        <p>We lobbied to change the rules so everyday people <br> outside the venture bubble <br> could finally invest in private startups, <br> a historically high performing asset class. </p>
+        <img src="{% static 'images/tech3.jpg' %}" alt="">
+        <i class='fas fa-chart-line' style='font-size:36px'></i><br>
+        <h2>Invest in vetted companies </h2><p>Only a small selection of companies make it <br> through our due diligence process. We’re <br> not an open marketplace where anyone <br> can just click and raise. </p>
+        
+        <i class='fas fa-city' style='font-size:36px'></i><br><h2>Diversify like a VC</h2>
+        <p>We offer lower minimums than traditional angel investments <br> so you can back more companies. When you <br> diversify, you increase your odds of positive returns</p>
+       </div>
+       <div class="txt">
+        <h1 class="text">You used to have to know someone who knows someone. Now you can just click invest.</h1>
+        <p>From Seed stage startups to Series C, every company on SeedInvest has made it through our rigorous vetting process. Browse companies currently raising on the platform.
+        </p>
+       </div>
+       <div class="image-left">
+        <img src="https://static.wixstatic.com/media/027fee_7f9fb0d67b854ba69c5d1fb5407024ae~mv2.jpg/v1/fit/w_2500,h_1330,al_c/027fee_7f9fb0d67b854ba69c5d1fb5407024ae~mv2.jpg" alt="Human Rights Logo"/>
+        <div><h1>Simple Labs</h1>
+            <h2><p>The Human Rights Logo has its origin in the international “Logo for Human Rights” initiative, which was started in 2010. Its goal was to create an internationally recognized logo to support the global human rights movement. The winning logo was created by Predrag Stakić from Serbia.</p></h2>
+
+            <button class="button">
+                Learn more
+            </button>
+            
+        </div>
+    </div>
+    
+    <div class="image-right">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnzEWIl31dUw-8Ljikms-sAryZvi9Q7I0X2w&usqp=CAU" alt="Human Rights Logo"/>
+        <div> <h1><Casatera</h1>
+            <p>The Human Rights Logo has its origin in the international “Logo for Human Rights” initiative, which was started in 2010. Its goal was to create an internationally recognized logo to support the global human rights movement. The winning logo was created by Predrag Stakić from Serbia.</p>
+            <button class="button">
+                Learn more
+            </button>
+           
+            
+
+
+
+        
+       
+
+    <script type="text/javascript" src="{% static 'dist/js/snazzymenu.min.js' %}"></script>
+    <script type="text/javascript">
+		jQuery(document).ready(function($) {
+            // SnazzyMenu initialize
+			jQuery('.snazzymenu').snazzyMenu({
+                sticky: true,
+                theme: 'dark',
+                phoneBtn: '888-888-8888',
+                locationBtn: 'https://goo.gl/maps/r67upT9SLPFjGNbbA',
+                colClasses: true,
+            });
+            
+            // Add custom images
+            jQuery('.column-1').prepend('<img src="{% static 'images/tech1.jpg' %}" >');
+            jQuery('.column-2').prepend('<img src="{% static 'images/tech2.jpg' %}">');
+            jQuery('.column-3').prepend('<img src="{% static 'images/tech3.jpg' %}">');
+            jQuery('.column-4').prepend('<img src="{% static 'images/tech4.jpg' %}">');
+            jQuery('.column-5').prepend('<img src="{% static 'images/nature1.jpg' %}">');
+            jQuery('.column-6').prepend('<img src="{% static 'images/nature2.jpg' %}">');
+            jQuery('.column-7').prepend('<img src="{% static 'images/nature3.jpg' %}">');
+            jQuery('.column-8').prepend('<img src="{% static 'images/nature4.jpg' %}">');
+            jQuery('.column-9').prepend('<img src="{% static 'images/nature5.jpg' %}">');
+            jQuery('.column-10').prepend('<img src="{% static 'images/nature6.jpg' %}">');
+            jQuery('.column-11').prepend('{% static 'images/nature7.jpg' %}">');
+            jQuery('.column-12').prepend('{% static 'images/nature6.jpg' %}">');
+            jQuery('.column-13').append('{% static 'images/nature1.jpg' %}">');
+            jQuery('.column-14').append('{% static 'images/nature3.jpg' %}">');
+            jQuery('.column-15').append('<img src="{% static 'images/nature4.jpg' %}">');
+            // Add image responsive class
+            jQuery('.column-title img').addClass('img-resp');
+		});
+	</script>
+
+    <script>
+        jQuery('#year').text(new Date().getFullYear());
+    </script>
+
+</body>
+</html>

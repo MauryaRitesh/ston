@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+
+
+.is__main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.is__main .heading {
+	font-size: 125px;
+	color: rgb(194, 0, 0);
+	text-transform: uppercase;
+	font-weight: 800;
+	position: fixed;
+	top: -10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	letter-spacing: 10px;
+	text-shadow: 0px 20px 20px #000000;
+	z-index: -9;
+}
+.is__wrapper {
+	display: flex;
+	overflow-x: hidden;
+	margin: auto;
+	border-radius: 30px;
+	border: 10px solid rgb(0, 0, 0);
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+		rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.is__container {
+	display: grid;
+	grid-template-columns: 55% 45%;
+	background-color: rgb(255, 255, 255);
+	width: 900px;
+	height: 400px;
+	overflow: hidden;
+	opacity: 1;
+	transform: translateX(0%);
+	animation: slideFade 0.7s ease-in-out;
+}
+
+@keyframes slideFade {
+	0% {
+		opacity: 0;
+		transform: translateX(0%);
+	}
+	50% {
+		transform: translateX(-2%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+.is__image img {
+	width: 100%;
+	height: 100%;
+	border-radius: 20px 0px 0px 20px;
+}
+
+.is__content {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+}
+
+.is__content h1 {
+	font-size: 25px;
+	padding: 2px 0;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.is__content h3 {
+	font-size: 20px;
+	color: rgb(78, 78, 78);
+	padding: 5px 0 20px 5px;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.is__content p {
+	font-size: 18px;
+	line-height: 25px;
+	padding: 7px;
+	font-weight: 400;
+}
+
+.arrow {
+	border: solid rgb(0, 0, 0);
+	border-width: 0 5px 5px 0;
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	padding: 3px;
+	position: relative;
+	transition: all 400ms;
+}
+
+.arrow:hover {
+	border: solid rgb(255, 255, 255);
+	border-width: 0 5px 5px 0;
+	cursor: pointer;
+}
+
+.arrow__left {
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	position: absolute;
+	left: -50px;
+	top: 45%;
+	transition: all 400ms;
+}
+
+.arrow__right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	position: absolute;
+	right: -50px;
+	top: 45%;
+}
