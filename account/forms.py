@@ -52,3 +52,20 @@ class SignUpForm(UserCreationForm):
     class Meta:
         model = User
         fields = ('username', 'email', 'password1', 'password2', 'is_admin', 'is_employee', 'is_customer')
+
+
+from .models import Startup, Investor
+
+
+class StartupForm(forms.ModelForm):
+
+    class Meta:
+        model = Startup
+        fields = ('name','url', 'address', 'domain', 'subdomain')
+
+
+class InvestorForm(forms.ModelForm):
+
+    class Meta:
+        model = Investor
+        fields = ('name', 'age', 'net_worth',)
